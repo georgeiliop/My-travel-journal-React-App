@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+body {
+    font-family: 'Inter', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Nav {
+    background-color: #F55A5A;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Nav>h1 {
+    font-size: 14px;
+    color: #FFFFFF;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.fa-earth-europe {
+    padding-right: 5px;
+}
+ /* for every card, to control the image and the text */
+.container {
+    display: flex;
+    max-height: 168px;
+    max-width: 470px;
+    justify-content: center;
+    padding: 18px 0px;
+    border-bottom: 1px solid #F5F5F5;
 }
 
-.App-link {
-  color: #61dafb;
+/* to make the last card not have a border */
+.container:last-of-type {
+    border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pic {
+    height: 165px;
+    width: 125px;
+    border-radius: 5px;
+
+}
+/* to center the cards on the page */
+.column {
+    display: flex;
+    justify-content: center;
+    margin: 18px 0px;
+}
+
+/* for the elements on the right side of the card */
+.infocontainer {
+    display: flex;
+    flex-direction: column;
+    max-height: 168px;
+    align-items: flex-start;
+    margin-left: 20px;
+
+    
+}
+/* to make select things next to each other */
+.container3 {
+    display: flex;
+}
+
+.location {
+    margin: 10px 0px 0px 0px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.title {
+    margin: 5px 0px 15px 0px;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.googleMapsUrl {
+    margin: 10px 0px 0px 10px;
+    color: #918E9B;
+    font-size: 10px;
+    text-decoration: underline;
+}
+
+.startDate {
+    margin: 0px;
+    font-size: 10px;
+}
+
+.endDate {
+    margin: 0px;
+    font-size: 10px;
+}
+
+.description {
+    margin: 10px 0px;
+    max-width: 325px;
+    max-height: 45px;
+    font-size: 11px;
+}
+
+.fa-location-dot {
+    color: #F55A5A;
+    margin-right: 3px;
 }
